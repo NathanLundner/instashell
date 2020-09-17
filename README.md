@@ -6,9 +6,9 @@ This is written in python3.
 
 ## Usage
 
-##### insta_shell generates the correct reverse shell syntax for any code platform for easy injection during a pentest or CTF.
+##### instashell generates the correct reverse shell syntax for any code platform for easy injection during a pentest or CTF.
 #####    Usage:
-#####    insta_shell <option> <ip> <port>
+#####    pythonb3 instashell <option> <ip> <port>
 #####    Options:
 #####    -bash  Bash shell
 #####    -perl  Perl shell
