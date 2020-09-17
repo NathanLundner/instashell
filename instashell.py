@@ -6,9 +6,9 @@ import sys
 if sys.argv[1] == "--help":
     print('''
     Description:\n
-    insta_shell generates the correct reverse shell syntax for any code platform for easy injection during a pentest or CTF.\n
+    instashell generates the correct reverse shell syntax for any code platform for easy injection during a pentest or CTF.\n
     Usage:\n
-    insta_shell <option> <ip> <port>\n
+    instashell <option> <ip> <port>\n
     Options:\n
     -bash  Bash shell\n
     -perl  Perl shell\n
