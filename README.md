@@ -6,7 +6,7 @@ This is written in python3.
 
 ## Updates:
 
-#### You can now use -tun0 in the ip option to automtiaclly parse your tun0 IP into instashell.
+#### You can now use -tun0 in the ip option to auto parse your tun0 IP into instashell.
 
 ## Usage
 
