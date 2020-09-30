@@ -24,6 +24,7 @@ if sys.argv[1] == "--help":
     -tun0         Automtically parses your IP address on tun0 when using a vpn.\n
     <custom ip>   Enter your own IP\n
     ''')
+    exit()
 
 # Check if valid params were passed
 if len(sys.argv) == 4:
