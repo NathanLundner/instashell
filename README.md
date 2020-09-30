@@ -12,7 +12,7 @@ This is written in python3.
 
 ##### instashell generates the correct reverse shell syntax for any code platform for easy injection during a pentest or CTF.
 #####    Usage:
-#####    pythonb3 instashell <option> <ip> <port>
+#####    python3 instashell <option> <ip> <port>
 #####    Options:
 #####    -bash  Bash shell
 #####    -perl  Perl shell
