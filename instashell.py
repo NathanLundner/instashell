@@ -21,8 +21,8 @@ if sys.argv[1] == "--help":
     -java  Java shell\n
     
     IP:
-    -tun0         Automtically parses your IP address on tun0 when using a vpn.
-    <custom ip>   Enter your own IP
+    -tun0         Automtically parses your IP address on tun0 when using a vpn.\n
+    <custom ip>   Enter your own IP\n
     ''')
 
 # Check if valid params were passed
