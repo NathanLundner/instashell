@@ -20,7 +20,7 @@ if sys.argv[1] == "--help":
     -nc    Netcat shell\n
     -java  Java shell\n
     
-    IP:
+    IP:\n
     -tun0         Automtically parses your IP address on tun0 when using a vpn.\n
     <custom ip>   Enter your own IP\n
     ''')
