@@ -19,12 +19,23 @@ if sys.argv[1] == "--help":
     -ruby  Ruby shell\n
     -nc    Netcat shell\n
     -java  Java shell\n
+    
+    IP:
+    -tun0         Automtically parses your IP address on tun0 when using a vpn.
+    <custom ip>   Enter your own IP
     ''')
 
 # Check if valid params were passed
 if len(sys.argv) == 4:
     shell_type = sys.argv[1]
-    ip = sys.argv[2]
+    if sys.argv[2] == "-tun0":
+    	try:
+    		ip = os.popen('ip addr show tun0').read().split("inet ")[1].split("/")[0]
+    	except:
+    		print("[-] Please connect tun0")
+    		exit()
+    else:
+    	ip = sys.argv[2]
     port = sys.argv[3]
     port = str(port)
 
