@@ -7,12 +7,13 @@ This is written in python3.
 ## Updates:
 
 #### You can now use -tun0 in the ip option to auto parse your tun0 IP into instashell.
+#### You can now enable a netcat listener in instashell by using the -l option.
 
 ## Usage
 
 ##### instashell generates the correct reverse shell syntax for any code platform for easy injection during a pentest or CTF.
 #####    Usage:
-#####    python3 instashell <option> <ip> <port>
+#####    python3 instashell <option> <ip> <port> <listener>
 #####    Options:
 #####    -bash  Bash shell
 #####    -perl  Perl shell
@@ -25,3 +26,6 @@ This is written in python3.
 #####     IP:
 #####     -tun0         Automtically parses your IP address on tun0 when using a vpn.
 #####     <custom ip>   Enter your own IP
+
+#####     Listener:\n
+#####     -l     Starts a netcat listener\n
